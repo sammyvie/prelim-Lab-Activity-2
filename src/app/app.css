@@ -1,0 +1,194 @@
+/* ========== GLOBAL BASE STYLES (Elegant Reset) ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  color: #e6f1ff;
+  line-height: 1.7;
+}
+
+/* Smooth page spacing */
+.cv-container {
+  max-width: 1500px;
+  margin: 60px auto;
+  padding: 60px 55px;
+  background: linear-gradient(130deg, #001334 0%, #004b95 50%, #0b6fe6 100%);
+  border-radius: 22px;
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ========== HEADER ========== */
+.cv-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cv-header .name {
+  font-size: 3.7rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #ffffff;
+  margin-bottom: 14px;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* CONTACT INFO */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 1.05rem;
+  color: #dce9ff;
+  opacity: 0.95;
+}
+
+/* Divider */
+.creative-divider {
+  width: 95%;
+  height: 2px;
+  margin: 30px auto 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  border-radius: 50px;
+}
+
+.creative-divider::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 6px;
+  background: #ffffff;
+  margin: 0 auto;
+  margin-top: -2px;
+  border-radius: 4px;
+  opacity: 0.75;
+}
+
+/* ========== SECTION TITLES ========== */
+.section-title {
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+/* PROFILE TEXT */
+.profile-text {
+  font-size: 1.12rem;
+  color: #eef5ff;
+  line-height: 1.9;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+/* ========== SKILLS SECTION ========== */
+.skills-section {
+  margin-top: 45px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 40px;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  margin-bottom: 50px;
+  padding-left: 22px;
+  position: relative;
+  font-size: 21px;
+  color: #e8f0ff;
+}
+
+.skills-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* ========== TECHNICAL SKILLS ========== */
+.tech-categories {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.tech-category {
+  background: rgba(255, 255, 255, 0.09);
+  padding: 22px 26px;
+  border-left: 5px solid #ffffff;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.category-title {
+  font-size: 100rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.tech-items {
+  font-size: 1rem;
+  color: #e8eeff;
+  line-height: 1.7;
+}
+
+
+/* ========== BUTTONS ========== */
+button {
+  width: 18em;
+  height: 3.2em;
+  border-radius: 30em;
+  font-size: 14px;
+  border: none;
+  background-color: #003379;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 62, 156, 0.4);
+  transition: 0.3s ease;
+  letter-spacing: 1px;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #004bb8, #003281);
+  transition: 0.4s ease;
+  border-radius: 30em;
+}
+
+button:hover::before {
+  width: 100%;
+}

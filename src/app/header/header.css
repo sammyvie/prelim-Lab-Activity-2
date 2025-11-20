@@ -1,0 +1,144 @@
+
+.cv-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 70px;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(
+    110deg,
+    #001334 0%,
+    #004f97 50%,
+    #0a6eea 100%
+  );
+  color: #d9e6f7;
+  line-height: 1.7;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cv-header .name {
+  font-size: 3.4rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #e5eeff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.contact-item {
+  color: #e5eeff;
+}
+
+.contact-item strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #c3dcff;
+  text-decoration: underline;
+}
+
+.separator {
+  color: #bbd4ff;
+  opacity: 0.6;
+}
+
+.creative-divider {
+  width: 90%;
+  height: 2px;
+  margin: 20px auto 0;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+
+  border-radius: 50px;
+  position: relative;
+}
+
+.creative-divider::after {
+  content: "";
+  width: 80px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -2px;
+  opacity: 0.7;
+}
+
+.section-title {
+  font-size: 1.45rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 8px;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 18px;
+}
+
+.profile-text {
+  color: #eef5ff;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 30px 25px;
+  }
+
+  .cv-header .name {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+  }
+
+  .contact-info {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  .creative-divider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-header .name {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    font-size: 0.85rem;
+  }
+}
